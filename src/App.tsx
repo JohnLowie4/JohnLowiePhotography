@@ -1,16 +1,11 @@
 import './App.css'
-import Image from './components/Image'
-import photosArray from './assets/images/photosArray.json'
+import ImageTable from './components/ImageTable'
 
 function App() {
-  const imagePath = "src/assets/images/"
-  const images = photosArray.map((path, index) => {
-    return <Image key={index} path={imagePath + path} />
-  })
 
   return (
     <>
-      {images}
+      <ImageTable />
     </>
   )
 }
